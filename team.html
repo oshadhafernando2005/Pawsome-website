@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        
+
+        /* Fade-in effect for section */
+        #team {
+            text-align: center;
+            padding: 60px 20px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+       
+
+        .team-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            max-width: 80%;
+            margin: auto;
+        }
+
+        .team-member {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease-in-out;
+            position: relative;
+            font-family: 'Nunito', sans-serif; /* Softer, rounded font */
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+
+
+        }
+
+        /* Profile images with soft shadow */
+        .team-member img {
+            width: 270px;
+            height: 270px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Hover Effect */
+        .team-member:hover img {
+            transform: scale(1.1);
+            
+        }
+
+      
+		
+		
+		
+    </style>
+</head>
+
+<body>
+	<nav class="navbar">
+        <div class="logo">
+            <img src="images/pawsomeLogo.png" alt="Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about-us.html">About</a></li>
+            <li><a href="feature.html">Services</a></li>
+            <li><a href="team.html">Our Team</a></li>
+        </ul>
+    </nav>
+    
+	
+    <section id="team">
+        <h2>Meet Our Team!</h2>
+
+        <div class="team-container">
+            <div class="team-member">
+                <img src="images/hafsa.jpg" alt="Sanuli">
+                <h3>Hafsa Raashid</h3>
+            </div>
+            <div class="team-member">
+                <img src="images/sanuli.jpg" alt="Hafsa">
+                <h3>Sanuli Jayasekara</h3>
+            </div>
+            <div class="team-member">
+                <img src="images/dilushi.jpg" alt="Dilushi">
+                <h3>Dilushi Rajendran</h3>
+            </div>
+            <div class="team-member">
+                <img src="images/sahlah.jpg" alt="Sahlah">
+                <h3>Sahlah Sheriff</h3>
+            </div>
+            <div class="team-member">
+                <img src="images/oshada.jpg" alt="Oshada" >
+                <h3>Oshada Fernando</h3>
+            </div>
+            <div class="team-member">
+                <img src="images/sanjana.jpg" alt="Sanjana">
+                <h3>Sanjana Sanjeevan</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h1 class="footerh">Contact Us</h1>
+        <div>
+            <a href="https://www.instagram.com/pawsome.lk.app?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img class="insta_icon" src="icons/instagram.svg" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/company/pawsome-lk/?viewAsMember=true"><img class="link_icon" src="icons/linkedIn.svg" alt="LinkedIn"></a>
+            <a href="mailto:pawsome469@gmail.com"><img class="gmail_icon" src="icons/gmail.svg" alt="Gmail"></a>
+            <p>If you have any questions, feel free to reach us<br> at : <a href="mailto:pawsome469@gmail.com">pawsome469@gmail.com</a><br></p>
+            <p class="right">&#169 2025 Pawsome. All rights reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

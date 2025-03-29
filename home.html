@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+
+    <title>Navigation Bar & Footer</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/pawsomeLogo.png" alt="Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about-us.html">About</a></li>
+            <li><a href="feature.html">Services</a></li>
+            <li><a href="team.html">Our Team</a></li>
+        </ul>
+    </nav>
+    
+    <div class="content">
+        <p class="intro">INTRODUCING</p>
+        <h1>Pawsome</h1>
+        
+    </div>
+    <p class="p1">Instant AI care and a Community You Can Rely on</p>
+    <h2 class="heading">The best for your pets is pawsome!</h2>
+    
+    <p class="para">There are some difficult situations where pet owners inevitably stumble <br>upon their pet’s specific health
+     and nutrition profile, activity levels, and <br> schedules for routine checkups.Lack of knowledge of these areas <br>leads to pets developing 
+     problems such as obesity, dental disease, <br>other ailments that would generally have a negative effect on their quality <br>and lifespan.
+    </p>
+    <p class="para">To prevent from such problems we are trying to introduce an app which <br>provide informations on all type of aspects.</p>
+
+    
+
+    <div class="contentgrid">
+        <div class="contentcard">
+            <img src="images/chatbot.avif">
+            <div class="detail">
+                <h3>AI chatbot</h3>
+                <p>AI powered catbot to clarify doubt related to health and nutrition, locating nearby veterinarians, providing healthy food diet 
+                and provide some tips related to training.
+                </p>
+            </div>
+        </div>
+        <div class="contentcard">
+            <img src="images/home.jpg">
+            <div class="detail">
+                <h3>Community</h3>
+                <p>A place where people can communicate with each other and can adapt stray cats and dogs as well as they can find petsitters for their pets.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+    <footer>
+        <h1 class="footerh">Contact Us</h1>
+        <div>
+            <a href="https://www.instagram.com/pawsome.lk.app?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img class="insta_icon" src="icons/instagram.svg" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/company/pawsome-lk/?viewAsMember=true"><img class="link_icon" src="icons/linkedIn.svg" alt="LinkedIn"></a>
+            <a href="mailto:pawsome469@gmail.com"><img class="gmail_icon" src="icons/gmail.svg" alt="Gmail"></a>
+            <p>If you have any questions, feel free to reach us<br> at : <a href="mailto:pawsome469@gmail.com">pawsome469@gmail.com</a><br></p>
+            <p class="right">&#169 2025 Pawsome. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+<style>
+/* styles.css */
+
+
+div h1 {
+    font-size: 38px;
+}
+
+
+
+h2 {
+    color: #ff6600;
+    text-align: center;
+    margin-top: 100px;
+    
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+ 
+
+.content {
+    background: url(images/home1.png) no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    height: 400px;
+    overflow: hidden;
+}
+
+
+
+
+.p1 {
+    text-align: center;
+    color: rgb(187, 66, 66);
+    margin-top: 50px;
+    font-size: 30px;
+   margin-bottom: -20px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3;
+    background-color: white;
+    margin-left: 400px;
+    margin-right: 400px;
+    
+
+
+}
+
+.para {
+    text-align: justify;
+    color: rgb(5, 0, 0);
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 25%;
+
+}
+
+p {
+    text-align: justify;
+    color: rgb(5, 0, 0);
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.contentgrid {
+    display: grid;                  
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 10px;                 
+}
+  
+.contentcard {
+    position: relative;
+    width: calc(100% / 2 - 20px);   
+    margin: 30px;                   
+    padding: 20px;                  
+    border: 2px solid #ddd;       
+    border-radius: 20px;            
+    text-align: center;            
+    height: 250px;                
+    margin-left: 150px;             
+}
+  
+.contentcard img {
+    width: 100%;                              
+    height: 250px;                            
+    display: block;         
+    border-radius: 20px;                      
+}
+
+.detail {
+    position: absolute;                               
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+    background-color: #004792;                     
+    opacity: 0;                                        
+	transition: opacity 0.7s ease-in-out;              
+    display: flex;
+    width: 357px;                                      
+    height: 252px;                                     
+    border-radius: 20px;                              
+    flex-direction: column;                            
+    justify-content: center;                           
+    padding: 20px;                                                      
+}
+
+/* style for the heading in the details */
+.detail h3 {
+    font-family: cursive;
+    color: #F0F8FF;
+}
+
+/* style for the paragraph in the details */
+.detail p {
+    font-family: cursive;
+    color: #F0F8FF;
+    text-align: center;
+}
+
+.contentcard:hover .detail {
+    opacity: 1;
+}
+
+.contentcard img:hover {
+    transform: scale(1.2);           
+}
+
+.intro{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+padding-right: 30px;
+padding-left: 40px;
+padding-top: 5px;
+font-size: 20px;
+margin-bottom: -20px; /* Reduce space below INTRODUCING */
+line-height: 1;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+@font-face {
+    font-family: 'Anastasia';
+    src: url('Anastasia.otf') format('opentype'); /* Adjust path */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.content h1 {
+    font-family: 'Anastasia', sans-serif;
+    font-size: 150px;
+    letter-spacing: 3px; /* Adjusts spacing between letters */
+    line-height: 1.2; /* Controls spacing between lines */
+    margin-top:10px; /* Adjust vertical spacing */
+    margin-bottom: 500px; /* Adds space below */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    
+
+}
+
+</style>
